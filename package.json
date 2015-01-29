@@ -7,8 +7,7 @@
   "scripts": {
     "documentation": "bin/markdox -o doc/api.md lib/markdox.js",
     "test": "./node_modules/mocha/bin/mocha test/*-test.js",
-    "examples": "node examples/example.js",
-    "preinstall": "npm install ../blanket"
+    "examples": "node examples/example.js"
   },
   "keywords": [
     "documentation",
