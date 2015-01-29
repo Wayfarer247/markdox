@@ -1,4 +1,4 @@
-Markdox [![Build Status](https://secure.travis-ci.org/cbou/markdox.png)](http://travis-ci.org/cbou/markdox)
+Markdox [![Build Status](https://travis-ci.org/Wayfarer247/markdox.svg)](http://travis-ci.org/Wayfarer247/markdox)
 ========
 
 Markdox is a documentation generator based on [Dox](https://github.com/visionmedia/dox) and Markdown with support for JavaScript, CoffeeScript and IcedCoffeeScript.
