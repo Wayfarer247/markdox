@@ -3,8 +3,7 @@ var should = require('should');
 var markdox = require('../index');
 
 var compiler = function(filepath, data) {
-  true.should.be.exactly(true);
-	return markdox.defaultCompiler(filepath, data);
+  return markdox.defaultCompiler(filepath, data);
 };
 
 describe('Markdox', function(){
@@ -12,10 +11,10 @@ describe('Markdox', function(){
     var file = __dirname + '/fixtures/transformTitle.coffee';
 
     var options = {
-    	compiler: compiler
+      compiler: compiler
     };
 
-    markdox.process(file, options, function(err, output){
+    markdox.process(file, options, function(err, output) {
       should.not.exist(err);
       
       output.should.match(/\n# My first title/);

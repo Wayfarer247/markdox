@@ -3,11 +3,11 @@ var should = require('should');
 var markdox = require('../index');
 
 var formatter = function(docfile) {
-	var docfile = markdox.defaultFormatter(docfile);
+  var docfile = markdox.defaultFormatter(docfile);
 
-	docfile.javadoc[0].description += ' updated';
+  docfile.javadoc[0].description += ' updated';
 
-	return docfile;
+  return docfile;
 };
 
 describe('Markdox', function(){
@@ -15,7 +15,7 @@ describe('Markdox', function(){
     var file = __dirname + '/fixtures/transformTitle.coffee';
 
     var options = {
-    	formatter: formatter
+      formatter: formatter
     };
 
     markdox.process(file, options, function(err, output){
